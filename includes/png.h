@@ -32,22 +32,22 @@ struct chunk_t {
     struct ihdr_chunk - IHDR Chunk.
 */
 struct ihdr_chunk {
-    uint32_t width;
-    uint32_t height;
-    uint8_t bit_depth;
-    uint8_t color_type;
-    uint8_t compress_method;
-    uint8_t filter_method;
-    uint8_t interlace_method;
+    dword width;
+    dword height;
+    byte bit_depth;
+    byte color_type;
+    byte compress_method;
+    byte filter_method;
+    byte interlace_method;
 };
 
 /*
     struct phys_chunk - pHYs Chunk.
 */
 struct phys_chunk {
-    uint32_t pixel_unit_x;
-    uint32_t pixel_unit_y;
-    uint8_t unit_specifier;
+    dword pixel_unit_x;
+    dword pixel_unit_y;
+    byte unit_specifier;
 };
 
 /*
